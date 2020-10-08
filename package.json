@@ -1,6 +1,6 @@
 {
   "name": "@ellreka/figma-comments-to-csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "git@github.com:ellreka/figma-comments-to-csv.git",
   "author": "ellreka <ellreka5364@gmail.com>",
   "license": "MIT",
@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "tsc -w index.ts",
     "build": "tsc index.ts",
-    "start": "node bin/cli.js"
+    "start": "node bin/cli.js",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@types/node": "^14.11.5",
